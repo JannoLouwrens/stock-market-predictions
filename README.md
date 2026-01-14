@@ -20,6 +20,12 @@ This project implements techniques from the following academic literature:
 | Tetlock, "Giving Content to Investor Sentiment" | 2007 | Media content → returns |
 | Bailey et al., "The Deflated Sharpe Ratio" | 2014 | Walk-forward validation |
 
+## Design Rationale
+
+I approached this as a research exploration rather than a trading bot. Early experiments showed single sentiment models were noisy, so I built an ensemble (VADER, TextBlob, Flair) and paired it with rigorous time-series validation to avoid look-ahead bias.
+
+The feature pipeline intentionally mixes news sentiment with momentum and rolling statistics so I could measure which signals actually matter. The final result documents both the marginal predictive lift and the practical limits of forecasting, which was the most valuable outcome of the project.
+
 ## Key Features
 
 ### Multi-Model Sentiment Ensemble
