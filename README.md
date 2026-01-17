@@ -3,7 +3,7 @@
 A machine learning system exploring the relationship between financial news sentiment and stock price movements, implementing state-of-the-art NLP techniques combined with time series forecasting.
 
 **Author:** Janno Louwrens
-**Created:** November 2023
+**Created:** November 2021
 
 ## Research Foundation
 
